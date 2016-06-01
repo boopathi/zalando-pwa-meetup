@@ -6,12 +6,14 @@ import theme from './theme';
 
 import Title from './title';
 import Capability from './capability';
+import Safe from './safe';
 import {Pass} from './fetch';
 import {Thankyou} from './trivial';
 
 const slidesOrder = [
   Title,
   Capability,
+  Safe,
   Pass,
   Thankyou
 ];

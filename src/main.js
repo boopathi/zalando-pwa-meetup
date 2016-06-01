@@ -6,14 +6,21 @@ import theme from './theme';
 
 import Title from './title';
 import {Pass} from './fetch';
+import {Thankyou} from './trivial';
+
+const slidesOrder = [
+  Title,
+  Pass,
+  Thankyou
+];
 
 class Show extends React.Component {
   render() {
     return <Spectacle theme={theme}>
-      <Deck transition={['slide']} transitionDuration={250}>
-        {Title}
-        {Pass}
-      </Deck>
+      <Deck
+        transition={['slide']}
+        transitionDuration={250}
+        children={slidesOrder} />
     </Spectacle>
   }
 }

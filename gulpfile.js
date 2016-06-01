@@ -40,7 +40,6 @@ gulp.task('webpack', cb => {
 gulp.task('webpack-dev-server', cb => {
   webpackConfig.devtool = 'eval';
   webpackConfig.debug = true;
-  console.log(webpackConfig);
   const compiler = webpack(webpackConfig);
   const server = new WebpackDevServer(compiler, {
     stats: webpackStatsOptions,

@@ -1,5 +1,7 @@
 const webpack = require('webpack');
 
+const DEV = process.env.NODE_ENV !== 'production';
+
 module.exports = {
   entry: {
     app: './src/main.js',
@@ -7,7 +9,7 @@ module.exports = {
   },
   output: {
     filename: '[name].bundle.js',
-    path: './build'
+    path: DEV ? 'build' : 'build/out'
   },
   module: {
     loaders: [
@@ -18,7 +20,7 @@ module.exports = {
       }
     ]
   },
-  devtool: process.env.NODE_ENV === 'production' ? void 0 : 'eval',
+  devtool: DEV ? 'eval' : void 0,
   plugins: [
     new webpack.optimize.CommonsChunkPlugin('vendor'),
     new webpack.DefinePlugin({

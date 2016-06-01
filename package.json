@@ -7,9 +7,9 @@
     "build": "webpack",
     "clean": "rm -rf build",
     "watch": "webpack --watch",
-    "min": "gulp",
-    "prod": "NODE_ENV=production npm run clean && npm run build && npm run min",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "min": "gulp min",
+    "all": "npm run clean && npm run build && npm run min",
+    "prod": "NODE_ENV=production npm run all"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   },
   "keywords": [],
   "author": "boopathi",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/boopathi/zalando-pwa-meetup/issues"
   },
@@ -30,6 +30,7 @@
     "raw-loader": "^0.5.1",
     "spectacle": "^1.0.6",
     "spectacle-code-slide": "^0.1.10",
-    "uglify-js": "^2.6.2"
+    "uglify-js": "^2.6.2",
+    "webpack": "^2.1.0-beta.8"
   }
 }

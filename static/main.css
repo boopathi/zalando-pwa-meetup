@@ -13,3 +13,7 @@ h1, h2, h3, h4, h5, h6, div {
 .link {
   text-decoration: underline;
 }
+
+.code{
+	font-size: 20px!important;
+}

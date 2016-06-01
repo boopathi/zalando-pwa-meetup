@@ -11,6 +11,7 @@ export default <Slide transition={['slide']}>
     <ListItem>Offline</ListItem>
     <ListItem>Safe - HTTPS</ListItem>
     <ListItem>Performant</ListItem>
-    <ListItem>Re-Engagement</ListItem>
+    <ListItem>Re-engagement</ListItem>
+    <ListItem>Linkable (it's the web)</ListItem>
 </List>
 </Slide>

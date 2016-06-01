@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const fs = require('fs');
 const uglify = require('gulp-uglify');
 const util = require('gulp-util');
 const webpack = require('webpack');
@@ -26,7 +27,7 @@ if (DEV) {
   gulp.task('build', ['webpack']);
   gulp.task('watch', ['webpack-dev-server']);
 } else {
-  gulp.task('build', ['webpack', 'min']);
+  gulp.task('build', ['min', 'copy-app-js']);
 }
 
 gulp.task('webpack', cb => {
@@ -51,7 +52,7 @@ gulp.task('webpack-dev-server', cb => {
   });
 });
 
-gulp.task('min', function() {
+gulp.task('min', ['webpack'], function() {
   return gulp.src('build/out/vendor.bundle.js')
     .pipe(uglify({
       mangle: true,
@@ -71,4 +72,10 @@ gulp.task('min', function() {
       }
     }))
     .pipe(gulp.dest('build'))
+});
+
+gulp.task('copy-app-js', ['webpack'], cb => {
+  fs.createReadStream('./build/out/app.bundle.js')
+    .pipe(fs.createWriteStream('./build/app.bundle.js'))
+    .on('end', cb);
 });

@@ -17,7 +17,7 @@ import {Pass} from './fetch';
 class Show extends React.Component {
   render() {
     return <Spectacle theme={theme}>
-      <Deck transition={['slide']} transitionDuration={1000}>
+      <Deck transition={['slide']} transitionDuration={250}>
         {Title}
         {Pass}
       </Deck>

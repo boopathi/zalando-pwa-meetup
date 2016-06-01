@@ -8,7 +8,7 @@ import Title from './title';
 import Capability from './capability';
 import Safe from './safe';
 import Manifest from './manifest';
-import {Pass} from './fetch';
+import {SampleSW} from './fetch';
 import {Thankyou} from './trivial';
 
 const slidesOrder = [
@@ -16,7 +16,7 @@ const slidesOrder = [
   Capability,
   Safe,
   Manifest,
-  Pass,
+  SampleSW,
   Thankyou
 ];
 

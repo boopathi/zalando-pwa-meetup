@@ -18,26 +18,8 @@ class Show extends React.Component {
   render() {
     return <Spectacle theme={theme}>
       <Deck transition={['slide']} transitionDuration={1000}>
-        <Slide transition={['slide']}>
-          asldkfj
-        </Slide>
-        <Slide transition={['slide']}>
-          asldkfj
-        </Slide>
-        <Slide transition={['slide']}>
-          asldkfj
-        </Slide>
         {Title}
         {Pass}
-        <Slide transition={['slide']}>
-          asldkfj
-        </Slide>
-        <Slide transition={['slide']}>
-          asldkfj
-        </Slide>
-        <Slide transition={['slide']}>
-          asldkfj
-        </Slide>
       </Deck>
     </Spectacle>
   }

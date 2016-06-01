@@ -1,13 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
-import {
-  Spectacle,
-  Deck,
-  Link,
-  Slide,
-  Heading
-} from 'spectacle';
-import CodeSlide from 'spectacle-code-slide';
+import {Spectacle, Deck} from 'spectacle';
 
 import theme from './theme';
 

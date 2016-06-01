@@ -7,6 +7,7 @@ import {
   Slide,
   Heading
 } from 'spectacle';
+import CodeSlide from 'spectacle-code-slide';
 
 import theme from './theme';
 
@@ -16,9 +17,27 @@ import {Pass} from './fetch';
 class Show extends React.Component {
   render() {
     return <Spectacle theme={theme}>
-      <Deck transition={['zoom', 'slide']} transitionDuration={200}>
-        <Title transition={['slide']} bgColor='#00796B' />
-        <Pass transition={['slide']} bgColor='#7C4DFF' />
+      <Deck transition={['slide']} transitionDuration={1000}>
+        <Slide transition={['slide']}>
+          asldkfj
+        </Slide>
+        <Slide transition={['slide']}>
+          asldkfj
+        </Slide>
+        <Slide transition={['slide']}>
+          asldkfj
+        </Slide>
+        {Title}
+        {Pass}
+        <Slide transition={['slide']}>
+          asldkfj
+        </Slide>
+        <Slide transition={['slide']}>
+          asldkfj
+        </Slide>
+        <Slide transition={['slide']}>
+          asldkfj
+        </Slide>
       </Deck>
     </Spectacle>
   }

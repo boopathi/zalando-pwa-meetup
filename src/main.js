@@ -8,7 +8,7 @@ import Title from './title';
 import Capability from './capability';
 import Safe from './safe';
 import Manifest from './manifest';
-import {SampleSW} from './fetch';
+import SampleSW from './sample-sw';
 import {Thankyou} from './trivial';
 
 const slidesOrder = [

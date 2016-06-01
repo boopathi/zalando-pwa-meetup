@@ -1,7 +1,7 @@
 import React from 'react';
 import CodeSlide from 'spectacle-code-slide';
 
-export const SampleSW = <CodeSlide
+export default <CodeSlide
   transition={[]}
   lang='js'
   code={require('raw!../assets/sample-sw.js')}

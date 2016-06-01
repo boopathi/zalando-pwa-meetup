@@ -18,6 +18,13 @@ module.exports = {
       }
     ]
   },
-  devtool: 'eval',
-  plugins: [ new webpack.optimize.CommonsChunkPlugin('vendor') ]
+  devtool: process.env.NODE_ENV === 'production' ? void 0 : 'eval',
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin('vendor'),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+      }
+    })
+  ]
 };

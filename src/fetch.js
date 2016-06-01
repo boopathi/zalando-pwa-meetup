@@ -4,7 +4,6 @@ import {
   Heading
 } from 'spectacle';
 import CodeSlide from 'spectacle-code-slide';
-// import Prism from 'prismjs';
 
 export const Pass = class extends React.Component {
   render() {

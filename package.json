@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "clean": "rm -rf build",
+    "watch": "webpack --watch",
+    "min": "gulp",
+    "prod": "NODE_ENV=production npm run clean && npm run build && npm run min",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,9 +25,11 @@
   "dependencies": {
     "babel-loader": "^6.2.4",
     "babel-preset-react": "^6.5.0",
-    "prismjs": "^1.5.0",
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^1.5.3",
     "raw-loader": "^0.5.1",
     "spectacle": "^1.0.6",
-    "spectacle-code-slide": "^0.1.10"
+    "spectacle-code-slide": "^0.1.10",
+    "uglify-js": "^2.6.2"
   }
 }

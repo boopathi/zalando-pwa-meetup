@@ -76,7 +76,7 @@ gulp.task('min', ['webpack'], function() {
     .pipe(gulp.dest('build'))
 });
 
-gulp.task('copy-app-js', function () {
+gulp.task('copy-app-js', ['webpack'], function () {
   return fs.createReadStream('./build/out/app.bundle.js')
     .pipe(through2(function(chunk, enc, callback) {
       this.push(babel.transform(chunk, {

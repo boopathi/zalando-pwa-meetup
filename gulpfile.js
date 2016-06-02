@@ -76,7 +76,7 @@ gulp.task('min', ['webpack'], function() {
     .pipe(gulp.dest('build'))
 });
 
-gulp.task('copy-app-js', ['webpack'], function () {
+gulp.task('copy-app-js', function () {
   return fs.createReadStream('./build/out/app.bundle.js')
     .pipe(through2(function(chunk, enc, callback) {
       this.push(babel.transform(chunk, {
@@ -84,7 +84,7 @@ gulp.task('copy-app-js', ['webpack'], function () {
         babelrc: false,
         compact: true,
         minified: true,
-        plugins: ['babel-plugin-short-identifiers']
+        presets: ['babel-preset-min']
       }).code);
       callback();
     }))

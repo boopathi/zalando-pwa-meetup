@@ -23,7 +23,7 @@
   "dependencies": {
     "babel-core": "^6.9.1",
     "babel-loader": "^6.2.4",
-    "babel-plugin-short-identifiers": "0.0.4",
+    "babel-preset-min": "0.0.4",
     "babel-preset-react": "^6.5.0",
     "gulp": "^3.9.1",
     "gulp-uglify": "^1.5.3",

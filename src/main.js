@@ -9,6 +9,7 @@ import Capability from './capability';
 import Safe from './safe';
 import Manifest from './manifest';
 import SampleSW from './sample-sw';
+import SWToolbox from './sw-toolbox';
 import {Thankyou} from './trivial';
 
 const slidesOrder = [
@@ -17,6 +18,7 @@ const slidesOrder = [
   Safe,
   Manifest,
   SampleSW,
+  SWToolbox,
   Thankyou
 ];
 

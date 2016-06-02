@@ -13,7 +13,16 @@ h1, h2, h3, h4, h5, h6, div {
 .link {
   text-decoration: underline;
 }
-
 .code{
 	font-size: 20px!important;
+}
+.note-white {
+  background: white;
+  padding: 25px;
+}
+.note-white object, .note-white img {
+  width: 100%;
+}
+.note-white text {
+  color: black;
 }

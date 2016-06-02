@@ -26,6 +26,7 @@
     "babel-preset-min": "0.0.5",
     "babel-preset-react": "^6.5.0",
     "gulp": "^3.9.1",
+    "gulp-babel-minify": "0.0.6",
     "gulp-uglify": "^1.5.3",
     "gulp-util": "^3.0.7",
     "raw-loader": "^0.5.1",

@@ -2,8 +2,7 @@ const gulp = require('gulp');
 const fs = require('fs');
 const uglify = require('gulp-uglify');
 const util = require('gulp-util');
-const through2 = require('through2');
-const babel = require('babel-core');
+const babelMinify = require('gulp-babel-minify');
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const webpackConfig = require('./webpack.config');
@@ -54,7 +53,7 @@ gulp.task('webpack-dev-server', cb => {
   });
 });
 
-gulp.task('min', ['webpack'], function() {
+gulp.task('minify-vendor', ['webpack'], function() {
   return gulp.src('build/out/vendor.bundle.js')
     .pipe(uglify({
       mangle: true,
@@ -76,22 +75,18 @@ gulp.task('min', ['webpack'], function() {
     .pipe(gulp.dest('build'))
 });
 
-gulp.task('copy-app-js', ['webpack'], function () {
-  return fs.createReadStream('./build/out/app.bundle.js')
-    .pipe(through2(function(chunk, enc, callback) {
-      this.push(babel.transform(chunk, {
-        comments: false,
-        babelrc: false,
-        compact: true,
-        minified: true,
-        presets: ['babel-preset-min']
-      }).code);
-      callback();
+gulp.task('minify-app', ['webpack'], function () {
+  return gulp.src('build/out/app.bundle.js')
+    .pipe(babelMinify({
+      conditionals: true,
+      drop_debugger: true,
+      drop_console: true,
+      babelrc: false,
     }))
-    .pipe(fs.createWriteStream('./build/app.bundle.js'));
+    .pipe(gulp.dest('build/'));
 });
 
-gulp.task('print-size', ['min', 'copy-app-js'], function (cb) {
+gulp.task('print-size', ['minify-vendor', 'minify-app'], function (cb) {
   function formatBytes(bytes, decimals) {
     if(bytes == 0) return '0 Byte';
     const k = 1000;
@@ -109,4 +104,4 @@ vendor.bundle.js: ${vendor}
    app.bundle.js: ${app}`);
 
   cb();
-})
+});

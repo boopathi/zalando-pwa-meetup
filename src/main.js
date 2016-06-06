@@ -10,6 +10,7 @@ import Safe from './safe';
 import Manifest from './manifest';
 import SampleSW from './sample-sw';
 import SWToolbox from './sw-toolbox';
+import Future from './future';
 import {Thankyou} from './trivial';
 
 const slidesOrder = [
@@ -19,6 +20,7 @@ const slidesOrder = [
   Manifest,
   SampleSW,
   SWToolbox,
+  Future,
   Thankyou
 ];
 

@@ -1,7 +1,7 @@
 code, pre, samp, kbd {
   font-size: 0.9em;
 }
-h1, h2, h3, h4, h5, h6, div {
+h1, h2, h3, h4, h5, h6, div, a {
   color: white!important;
 }
 .white {
@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6, div {
   color: black;
 }
 .link {
-  text-decoration: underline;
+  text-decoration: underline!important;
 }
 .code{
 	font-size: 20px!important;

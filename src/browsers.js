@@ -10,7 +10,7 @@ import {
 export default <Slide bgColor='#673AB7' transition={['slide']}>
   <Heading size={4}>Browser Support</Heading>
   <List>
-    <ListItem>Chrome - 45+</ListItem>
+    <ListItem>Chrome - 42+</ListItem>
     <ListItem>Firefox - 44+</ListItem>
     <ListItem>Opera - 37+</ListItem>
     <ListItem>Edge -&nbsp;

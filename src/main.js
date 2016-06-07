@@ -9,6 +9,7 @@ import Definition from './definition';
 import Capability from './capability';
 import Safe from './safe';
 import Manifest from './manifest';
+import DefineSW from './define-sw';
 import SampleSW from './sample-sw';
 import SWToolbox from './sw-toolbox';
 import Push from './sample-push';
@@ -21,6 +22,7 @@ const slidesOrder = [
   Capability,
   Safe,
   Manifest,
+  DefineSW,
   SampleSW,
   SWToolbox,
   Push,

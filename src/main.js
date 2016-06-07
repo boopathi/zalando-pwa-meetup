@@ -19,7 +19,7 @@ import SWToolboxStrategies from './toolbox-strategies';
 import Push from './sample-push';
 import BrowserSupport from './browsers';
 import Future from './future';
-import {Thankyou} from './trivial';
+import {Thankyou, Links} from './trivial';
 
 // small slides
 const DefineSW = <Slide transition={['slide']} bgImage='static/service-worker.jpg'/>;
@@ -36,10 +36,14 @@ const installPrompt = <Slide transition={['slide']}>
   <img src={'static/install-prompt.png'} height={window.innerHeight-200}/>
 </Slide>
 
-const SWToolboxIntro = <Slide bgColor='#388E3C' transitions={['slide']}>
+const SWToolboxIntro = <Slide bgColor='#388E3C' transition={['slide']}>
   <Heading>sw-toolbox</Heading>
   <Link className='link' target='_blank' href='https://github.com/GoogleChrome/sw-toolbox'>{'https://github.com/GoogleChrome/sw-toolbox'}</Link>
-</Slide>
+</Slide>;
+
+const SWNotJustOffline = <Slide transition={['slide']}>
+  <Heading>{'It\'s not just about offline'}</Heading>
+</Slide>;
 
 const PWADemo = <Slide bgColor='#FFC107' transition={['slide']}>
   <Heading size={4}>
@@ -66,12 +70,15 @@ const slidesOrder = [
   SWToolbox,
   SWToolboxStrategies,
 
+  SWNotJustOffline,
+
   PushNotification,
   Push,
   PWADemo,
   BrowserSupport,
 
   Future,
+  Links,
   Thankyou
 ];
 

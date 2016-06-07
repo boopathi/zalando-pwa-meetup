@@ -13,6 +13,7 @@ import DefineSW from './define-sw';
 import SampleSW from './sample-sw';
 import SWToolbox from './sw-toolbox';
 import Push from './sample-push';
+import BrowserSupport from './browsers';
 import Future from './future';
 import {Thankyou} from './trivial';
 
@@ -26,6 +27,7 @@ const slidesOrder = [
   SampleSW,
   SWToolbox,
   Push,
+  BrowserSupport,
   Future,
   Thankyou
 ];

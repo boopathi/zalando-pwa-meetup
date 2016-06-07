@@ -5,6 +5,7 @@ import {Spectacle, Deck} from 'spectacle';
 import theme from './theme';
 
 import Title from './title';
+import Definition from './definition';
 import Capability from './capability';
 import Safe from './safe';
 import Manifest from './manifest';
@@ -15,6 +16,7 @@ import {Thankyou} from './trivial';
 
 const slidesOrder = [
   Title,
+  Definition,
   Capability,
   Safe,
   Manifest,

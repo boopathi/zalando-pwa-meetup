@@ -14,7 +14,8 @@ import Manifest from './manifest';
 
 import SampleSW from './sample-sw';
 import SWToolbox from './sw-toolbox';
-import SWToolboxStrategies from './toolbox-strategies';
+import {SWToolboxStrategies, SWToolboxOptions} from './toolbox-strategies';
+import SWGotchas from './gotchas';
 
 import Push from './sample-push';
 import BrowserSupport from './browsers';
@@ -69,8 +70,10 @@ const slidesOrder = [
   SWToolboxIntro,
   SWToolbox,
   SWToolboxStrategies,
+  SWToolboxOptions,
 
   SWNotJustOffline,
+  SWGotchas,
 
   PushNotification,
   Push,

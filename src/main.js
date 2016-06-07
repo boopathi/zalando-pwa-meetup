@@ -32,7 +32,7 @@ const manifestExample = <Slide bgColor='#8BC34A' transition={['slide']}>
   <Image src={'static/airhorner.gif'} height={window.innerHeight - 200} />
 </Slide>;
 
-const installPrompt = <Slide transition={['slide']}>
+const installPrompt = <Slide bgColor='#8BC34A' transition={['slide']}>
   <Text lineHeight='2'>Install Prompt</Text>
   <img src={'static/install-prompt.png'} height={window.innerHeight-200}/>
 </Slide>
@@ -42,7 +42,7 @@ const SWToolboxIntro = <Slide bgColor='#388E3C' transition={['slide']}>
   <Link className='link' target='_blank' href='https://github.com/GoogleChrome/sw-toolbox'>{'https://github.com/GoogleChrome/sw-toolbox'}</Link>
 </Slide>;
 
-const SWNotJustOffline = <Slide transition={['slide']}>
+const SWNotJustOffline = <Slide bgColor='#8BC34A' transition={['slide']}>
   <Heading>{'It\'s not just about offline'}</Heading>
 </Slide>;
 

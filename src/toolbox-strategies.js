@@ -11,7 +11,7 @@ toolbox.router.get('/api/*', toolbox.networkFirst, {
   }
 })`;
 
-export const SWToolboxOptions = <Slide transition={['slide']}>
+export const SWToolboxOptions = <Slide transition={['slide']} bgColor='#FFA000'>
   <Heading size={2}>Toolbox Options</Heading>
   <List>
     <ListItem>networkTimeoutSeconds</ListItem>

@@ -22,13 +22,13 @@ import Future from './future';
 import {Thankyou} from './trivial';
 
 // small slides
-const DefineSW = <Slide transition={['slide']} bgImage='/static/service-worker.jpg'/>;
+const DefineSW = <Slide transition={['slide']} bgImage='static/service-worker.jpg'/>;
 const PushNotification = <Slide bgColor='#E64A19' transition={['slide']}>
   <Heading size={1}>Push Notifications</Heading>
 </Slide>;
 const manifestExample = <Slide bgColor='#8BC34A' transition={['slide']}>
   <Text lineHeight='2'>Launch from Home Screen</Text>
-  <Image src={'./static/airhorner.gif'} height={window.innerHeight - 200} />
+  <Image src={'static/airhorner.gif'} height={window.innerHeight - 200} />
 </Slide>;
 
 const installPrompt = <Slide transition={['slide']}>

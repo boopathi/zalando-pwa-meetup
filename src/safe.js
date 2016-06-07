@@ -7,7 +7,7 @@ import {
 } from 'spectacle';
 
 export default <Slide transition={['slide']}>
-  <Heading size={3}>
+  <Heading size={4}>
     Secure SSL/HTTPS
   </Heading>
   <Text fit lineHeight={3}>

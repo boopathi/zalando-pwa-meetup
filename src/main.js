@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {render} from 'react-dom';
-import {Spectacle, Slide, Image, Deck} from 'spectacle';
+import {
+  Spectacle, Slide, Image, Deck, Heading, Link
+} from 'spectacle';
 
 import theme from './theme';
 
@@ -9,8 +11,11 @@ import Definition from './definition';
 import Capability from './capability';
 import Safe from './safe';
 import Manifest from './manifest';
+
 import SampleSW from './sample-sw';
 import SWToolbox from './sw-toolbox';
+import SWToolboxStrategies from './toolbox-strategies';
+
 import Push from './sample-push';
 import BrowserSupport from './browsers';
 import Future from './future';
@@ -23,6 +28,11 @@ const manifestExample = <Slide bgColor='#8BC34A' transition={['slide']}>
   <Image src={'./static/airhorner.gif'} height={window.innerHeight - 100} />
 </Slide>;
 
+const SWToolboxIntro = <Slide transitions={['slide']}>
+  <Heading>sw-toolbox</Heading>
+  <Link className='link' target='_blank' href='https://github.com/GoogleChrome/sw-toolbox'>{'https://github.com/GoogleChrome/sw-toolbox'}</Link>
+</Slide>
+
 const slidesOrder = [
   Title,
   Definition,
@@ -30,9 +40,16 @@ const slidesOrder = [
   Manifest,
   manifestExample,
   Safe,
+
+  // service worker
   DefineSW,
   SampleSW,
+
+  // sw-toolbox
+  SWToolboxIntro,
   SWToolbox,
+  SWToolboxStrategies,
+
   Push,
   BrowserSupport,
   Future,

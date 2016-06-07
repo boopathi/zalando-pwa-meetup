@@ -3,7 +3,7 @@ import {
   Slide, Heading, List, ListItem
 } from 'spectacle';
 
-export default <Slide transition={['slide']}>
+export default <Slide bgColor='#616161' transition={['slide']}>
   <Heading>Strategies</Heading>
   <List>
     <ListItem>CacheOnly</ListItem>

@@ -23,14 +23,14 @@ import {Thankyou} from './trivial';
 
 // small slides
 const DefineSW = <Slide transition={['slide']} bgImage='/static/service-worker.jpg'/>;
-const PushNotification = <Slide transition={['slide']}>
+const PushNotification = <Slide bgColor='#E64A19' transition={['slide']}>
   <Heading size={1}>Push Notifications</Heading>
 </Slide>;
 const manifestExample = <Slide bgColor='#8BC34A' transition={['slide']}>
   <Image src={'./static/airhorner.gif'} height={window.innerHeight - 100} />
 </Slide>;
 
-const SWToolboxIntro = <Slide transitions={['slide']}>
+const SWToolboxIntro = <Slide bgColor='#388E3C' transitions={['slide']}>
   <Heading>sw-toolbox</Heading>
   <Link className='link' target='_blank' href='https://github.com/GoogleChrome/sw-toolbox'>{'https://github.com/GoogleChrome/sw-toolbox'}</Link>
 </Slide>

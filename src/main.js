@@ -9,13 +9,15 @@ import Definition from './definition';
 import Capability from './capability';
 import Safe from './safe';
 import Manifest from './manifest';
-import DefineSW from './define-sw';
 import SampleSW from './sample-sw';
 import SWToolbox from './sw-toolbox';
 import Push from './sample-push';
 import BrowserSupport from './browsers';
 import Future from './future';
 import {Thankyou} from './trivial';
+
+// small slides
+const DefineSW = <Slide transition={['slide']} bgImage='/static/service-worker.jpg'/>
 
 const manifestExample = <Slide transition={['slide']}>
   <Image src={'./static/airhorner.gif'} height={window.innerHeight - 100} />

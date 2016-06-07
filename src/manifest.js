@@ -13,6 +13,6 @@ export default <Slide transition={['slide']}>
   <Heading size={4} lineHeight={1.5}>
     Add to Home Screen
   </Heading>
-  <Text lineHeight="1.5">{link}</Text>
+  <Text lineHeight={1.5}>{link}</Text>
   <CodePane className='code' lang={'javascript'} source={manifestFile}/>
 </Slide>

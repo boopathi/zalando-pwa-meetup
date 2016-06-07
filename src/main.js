@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {render} from 'react-dom';
-import {Spectacle, Deck} from 'spectacle';
+import {Spectacle, Slide, Image, Deck} from 'spectacle';
 
 import theme from './theme';
 
@@ -17,12 +17,17 @@ import BrowserSupport from './browsers';
 import Future from './future';
 import {Thankyou} from './trivial';
 
+const manifestExample = <Slide transition={['slide']}>
+  <Image src={'./static/airhorner.gif'} height={window.innerHeight - 100} />
+</Slide>;
+
 const slidesOrder = [
   Title,
   Definition,
   Capability,
-  Safe,
   Manifest,
+  manifestExample,
+  Safe,
   DefineSW,
   SampleSW,
   SWToolbox,

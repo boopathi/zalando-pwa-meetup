@@ -27,12 +27,12 @@ const PushNotification = <Slide bgColor='#E64A19' transition={['slide']}>
   <Heading size={1}>Push Notifications</Heading>
 </Slide>;
 const manifestExample = <Slide bgColor='#8BC34A' transition={['slide']}>
-  <Text>Launch from Home Screen</Text>
+  <Text lineHeight='2'>Launch from Home Screen</Text>
   <Image src={'./static/airhorner.gif'} height={window.innerHeight - 200} />
 </Slide>;
 
 const installPrompt = <Slide transition={['slide']}>
-  <Text>Install Prompt</Text>
+  <Text lineHeight='2'>Install Prompt</Text>
   <img src={'static/install-prompt.png'} height={window.innerHeight-200}/>
 </Slide>
 
@@ -40,6 +40,12 @@ const SWToolboxIntro = <Slide bgColor='#388E3C' transitions={['slide']}>
   <Heading>sw-toolbox</Heading>
   <Link className='link' target='_blank' href='https://github.com/GoogleChrome/sw-toolbox'>{'https://github.com/GoogleChrome/sw-toolbox'}</Link>
 </Slide>
+
+const PWADemo = <Slide bgColor='#FFC107' transition={['slide']}>
+  <Heading size={4}>
+    <Link className='link' target='_blank' href="https://vigneshh.in/zalando-pwa-demo/step4/">DEMO</Link>
+  </Heading>
+</Slide>;
 
 const slidesOrder = [
   Title,
@@ -62,6 +68,7 @@ const slidesOrder = [
 
   PushNotification,
   Push,
+  PWADemo,
   BrowserSupport,
 
   Future,

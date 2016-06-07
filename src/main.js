@@ -22,7 +22,7 @@ import Future from './future';
 import {Thankyou} from './trivial';
 
 // small slides
-const DefineSW = <Slide transition={['slide']} bgImage='/static/service-worker.jpg'/>
+const DefineSW = <Slide transition={['slide']} bgImage='static/service-worker.jpg'/>
 
 const manifestExample = <Slide bgColor='#8BC34A' transition={['slide']}>
   <Image src={'./static/airhorner.gif'} height={window.innerHeight - 100} />

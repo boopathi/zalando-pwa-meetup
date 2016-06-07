@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {render} from 'react-dom';
 import {
-  Spectacle, Slide, Image, Deck, Heading, Link
+  Spectacle, Slide, Image, Deck, Heading, Link, Text
 } from 'spectacle';
 
 import theme from './theme';
@@ -27,8 +27,14 @@ const PushNotification = <Slide bgColor='#E64A19' transition={['slide']}>
   <Heading size={1}>Push Notifications</Heading>
 </Slide>;
 const manifestExample = <Slide bgColor='#8BC34A' transition={['slide']}>
-  <Image src={'./static/airhorner.gif'} height={window.innerHeight - 100} />
+  <Text>Launch from Home Screen</Text>
+  <Image src={'./static/airhorner.gif'} height={window.innerHeight - 200} />
 </Slide>;
+
+const installPrompt = <Slide transition={['slide']}>
+  <Text>Install Prompt</Text>
+  <img src={'static/install-prompt.png'} height={window.innerHeight-200}/>
+</Slide>
 
 const SWToolboxIntro = <Slide bgColor='#388E3C' transitions={['slide']}>
   <Heading>sw-toolbox</Heading>
@@ -39,7 +45,9 @@ const slidesOrder = [
   Title,
   Definition,
   Capability,
+
   Manifest,
+  installPrompt,
   manifestExample,
   Safe,
 
@@ -55,6 +63,7 @@ const slidesOrder = [
   PushNotification,
   Push,
   BrowserSupport,
+
   Future,
   Thankyou
 ];

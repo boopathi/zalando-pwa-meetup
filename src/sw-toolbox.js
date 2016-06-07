@@ -16,7 +16,7 @@ export default <CodeSlide
   lang='js'
   code={require('raw!../assets/sw-toolbox.js')}
   ranges={[
-    { loc: [8, 8], title: 'Service Worker toolbox' },
+    { loc: [8, 8], title: 'sw-toolbox' },
     { loc: [0, 1], note: 'import sw-toolbox code' },
     { loc: [2, 4] },
     { loc: [5, 9] },

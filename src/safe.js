@@ -11,7 +11,7 @@ export default <Slide bgColor='#FF9800' transition={['slide']}>
     Secure SSL/HTTPS
   </Heading>
   <Text fit lineHeight={3}>
-    A service worker has a lot of power. We wouldn't want it to fall into the wrong hands.
+    {'A service worker has a lot of power. We wouldn\'t want it to fall into the wrong hands.'}
   </Text>
-  <Image src={'./static/padlock.jpg'} width={300} height={300} />
+  <Image src={'./static/https.png'} height={300} />
 </Slide>

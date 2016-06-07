@@ -1,7 +1,7 @@
 import React from 'react';
 import {Slide, Heading, Link, List, ListItem} from 'spectacle';
 
-export default <Slide transition={['slide']}>
+export default <Slide bgColor='#455A64' transition={['slide']}>
   <Heading lineHeight={2} size={4}>Whats Missing?</Heading>
   <List>
     <ListItem>Differentiate PWA from existing websites</ListItem>

@@ -6,7 +6,7 @@ import {
   Slide
 } from 'spectacle';
 
-export default <Slide transition={['slide']}>
+export default <Slide bgColor='#FF9800' transition={['slide']}>
   <Heading size={4}>
     Secure SSL/HTTPS
   </Heading>

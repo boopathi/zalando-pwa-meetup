@@ -5,7 +5,7 @@ import {
   Slide
 } from 'spectacle';
 
-export default <Slide transition={['slide']}>
+export default <Slide bgColor='#E91E63' transition={['slide']}>
   <List>
     <ListItem>Installable</ListItem>
     <ListItem>Offline</ListItem>

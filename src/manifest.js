@@ -9,7 +9,7 @@ import {
 import manifestFile from 'raw!../assets/sample-manifest';
 const link = '<link rel="manifest" href="manifest.json"/>';
 
-export default <Slide transition={['slide']}>
+export default <Slide bgColor='#00796B' transition={['slide']}>
   <Heading size={4} lineHeight={1.5}>
     Add to Home Screen
   </Heading>
